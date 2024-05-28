@@ -5,11 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({ command }) => {
   const config = {
     plugins: [react()],
-    base: '/',
+    base: '/Spacer-App-Front',
   }
 
   if (command !== 'serve') {
-    config.base = '/Spacer-app/'
+    config.base = '/Spacer-App-Front/'
   }
 
   return config
